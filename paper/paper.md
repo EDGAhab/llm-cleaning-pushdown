@@ -183,7 +183,7 @@ The most useful next steps are raw crawl input, a bandwidth sweep on real links,
 
 ## Artifact Availability
 
-Code, pipeline specs, experiment scripts, and raw results are available at **[TODO: repository URL]** under the Apache 2.0 license. `scripts/run_pii_matrix.sh` reruns the 11-run matrix, `scripts/run_pii_extras.sh` adds the n=3 repeats and the redaction-only pilot, and per-document output hashes provide the cross-scheme correctness check.
+Code, pipeline specs, experiment scripts, and raw results are available at **https://github.com/EDGAhab/llm-cleaning-pushdown** under the Apache 2.0 license. `scripts/run_pii_matrix.sh` reruns the 11-run matrix, `scripts/run_pii_extras.sh` adds the n=3 repeats and the redaction-only pilot, and per-document output hashes provide the cross-scheme correctness check.
 
 ## References
 
