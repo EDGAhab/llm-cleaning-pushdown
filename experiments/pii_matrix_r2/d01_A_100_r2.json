@@ -1,0 +1,22 @@
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "label": "pii-d01-r2",
+  "storage_cpu_s": 0.0,
+  "storage_wall_s": 0.0,
+  "compute_cpu_s": 228.81,
+  "compute_wall_s": 230.81,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "pii_redactions": 208,
+  "bytes_storage_to_compute": 24771919,
+  "transfer_time_s": 1.98,
+  "time_to_ready_s": 232.79,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "total_wall_s": 232.01,
+  "cost_usd": 0.0049,
+  "cost_usd_ex_egress": 0.0027
+}

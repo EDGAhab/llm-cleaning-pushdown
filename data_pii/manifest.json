@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "n_docs": 20000,
+  "precleared_natural_total": 3076,
+  "method": "pre-clear with pipeline-exact regexes, then tier-controlled synthetic injection; all tiers share identical base docs",
+  "tiers": {
+    "d01": {
+      "tier": "d01",
+      "frac": 0.01,
+      "max_per_doc": 1,
+      "docs": 20000,
+      "synthetic_injected": 208,
+      "bytes": 24771919,
+      "sha256": "fbe0227482ff70c5cf4733bd95d0ee10b78b2a77707294e86fa01a4f3e6de0b7",
+      "precleared_natural": 3076
+    },
+    "d10": {
+      "tier": "d10",
+      "frac": 0.1,
+      "max_per_doc": 1,
+      "docs": 20000,
+      "synthetic_injected": 1970,
+      "bytes": 24802894,
+      "sha256": "a6fbf5e671f7fcb17178148f4c2cd23197a5ab3c2064252a3359c79b1a05d562",
+      "precleared_natural": 3076
+    },
+    "d30": {
+      "tier": "d30",
+      "frac": 0.3,
+      "max_per_doc": 3,
+      "docs": 20000,
+      "synthetic_injected": 12001,
+      "bytes": 24888461,
+      "sha256": "5ddd0ba5ab5c85f597d4261a2c42f9c6c5db028b8d5c6fc5bde4d202e24f515c",
+      "precleared_natural": 3076
+    }
+  }
+}

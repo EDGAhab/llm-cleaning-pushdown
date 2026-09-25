@@ -1,0 +1,13 @@
+# llm-cleaning-pushdown requirements (local dev / week-3 trial)
+# All packages are free and open-source. No paid APIs.
+moto[server]>=5.0      # S3-compatible mock storage for local debugging
+boto3>=1.34            # S3 client
+zstandard>=0.23        # zstd compression for chunked/parquet formats
+pyarrow>=15.0          # parquet read/write
+duckdb>=0.10           # column pruning (scheme B, week 5+)
+datasketch>=1.6        # MinHash signatures
+xxhash>=3.4            # fast non-crypto hashing for exact dedup
+langdetect>=1.0.9      # lightweight language identification
+requests>=2.31         # FineWeb sample download helpers
+datasets>=2.18         # HuggingFace streaming download of FineWeb sample
+pyyaml>=6.0            # pricing.yaml / configs

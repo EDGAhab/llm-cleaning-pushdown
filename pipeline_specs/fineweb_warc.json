@@ -1,0 +1,77 @@
+{
+  "description": "FineWeb-style pipeline with an html_extract first stage (WARC->text probe). Extraction is a standard public pipeline stage, not a custom rule.",
+  "input": {
+    "columns": [
+      "id",
+      "text"
+    ],
+    "format": "chunked_gzip"
+  },
+  "name": "fineweb_warc",
+  "output": {
+    "columns": [
+      "id",
+      "text"
+    ],
+    "sorted_by": "id"
+  },
+  "seed": 42,
+  "steps": [
+    {
+      "type": "html_extract",
+      "params": {},
+      "note": "WARC->text boilerplate extraction (week-4 probe)"
+    },
+    {
+      "note": "Simplified public Gopher/FineWeb-style heuristic filters",
+      "params": {
+        "max_symbol_ratio": 0.1,
+        "max_uppercase_ratio": 0.2,
+        "min_words": 50,
+        "symbols": [
+          "#",
+          "..."
+        ]
+      },
+      "type": "rule_filter"
+    },
+    {
+      "params": {
+        "keep": [
+          "en"
+        ],
+        "min_confidence": 0.9
+      },
+      "type": "language_id"
+    },
+    {
+      "note": "Regex redaction; PII in trials is SYNTHETIC, injected by scripts/00_prepare_data.py",
+      "params": {
+        "patterns": [
+          "email",
+          "phone_us",
+          "ssn_us"
+        ],
+        "replacement": "[REDACTED]"
+      },
+      "type": "pii_redact"
+    },
+    {
+      "note": "Signatures computed storage-side; LSH bucketing stays on compute (scheme D)",
+      "params": {
+        "num_perm": 128,
+        "seed": 42,
+        "shingle_k": 5
+      },
+      "type": "minhash_sign"
+    },
+    {
+      "note": "Global step: always runs on compute in every scheme",
+      "params": {
+        "key": "sha256(text)"
+      },
+      "placement": "compute",
+      "type": "exact_dedup"
+    }
+  ]
+}

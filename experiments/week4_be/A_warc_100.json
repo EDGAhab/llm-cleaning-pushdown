@@ -1,0 +1,22 @@
+{
+  "scheme": "A",
+  "format": "warc_html",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "label": "",
+  "storage_cpu_s": 0.0,
+  "storage_wall_s": 0.0,
+  "compute_cpu_s": 284.66,
+  "compute_wall_s": 286.2,
+  "docs_in": 20000,
+  "docs_out": 19986,
+  "pii_redactions": 3153,
+  "bytes_storage_to_compute": 27061538,
+  "transfer_time_s": 2.16,
+  "time_to_ready_s": 288.36,
+  "filter_rate": 0.0007,
+  "output_sha256": "d1b5dcab9549912a4b4d98e2c9e0190cd1618571ece4dc0fa1e46e22a8525fb1",
+  "total_wall_s": 287.55,
+  "cost_usd": 0.0058,
+  "cost_usd_ex_egress": 0.0034
+}

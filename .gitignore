@@ -1,0 +1,17 @@
+# Python / runtime
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Large regenerable artifacts: DO NOT commit.
+# Raw FineWeb corpus (~3.5G). Regenerate with: python scripts/00_prepare_data.py
+data/
+# Large intermediate experiment artifacts (subsets, storage node shards).
+# Keep the small per-run result JSONs in experiments/pii_matrix*.
+experiments/subsets/
+experiments/storage_nodes/
+experiments/*.parquet
+
+# Internal-only planning notes (not for public release)
+.internal/

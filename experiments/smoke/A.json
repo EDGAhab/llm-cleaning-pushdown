@@ -1,0 +1,22 @@
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "label": "",
+  "storage_cpu_s": 0.0,
+  "storage_wall_s": 0.0,
+  "compute_cpu_s": 9.72,
+  "compute_wall_s": 9.7,
+  "docs_in": 3000,
+  "docs_out": 1884,
+  "pii_redactions": 0,
+  "bytes_storage_to_compute": 156620,
+  "transfer_time_s": 0.01,
+  "time_to_ready_s": 9.71,
+  "filter_rate": 0.372,
+  "output_sha256": "04c772ad93672ac41c497e4160559e73fc19400621350b8ba1dc12eb445a62cf",
+  "total_wall_s": 9.72,
+  "cost_usd": 0.0001,
+  "cost_usd_ex_egress": 0.0001
+}

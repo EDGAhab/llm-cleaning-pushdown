@@ -1,0 +1,14 @@
+# cost model constants (local trial + planning). Dated 2026-09-24.
+# Cloud prices are PLACEHOLDERS for the week-3 trial: the trial reports
+# time/bytes/CPU-hours; dollar conversion uses these documented constants.
+# Real cloud pricing (AWS/GCP official pages, dated) will be collected in
+# week 8 per handoff section 5.
+usd_per_cpu_hour: 0.0425      # ~ c6i.large on-demand /2 vCPU; placeholder, dated 2026-09-24
+usd_per_gb_egress_cross_cloud: 0.09   # AWS egress to internet, placeholder
+usd_per_gb_egress_cross_region: 0.02  # AWS cross-region, placeholder
+usd_per_gb_egress_same_region: 0.0
+# bandwidth scenarios for the transfer-time model (also reproducible via tc)
+bandwidth_mbps:
+  same_region: 10000
+  cross_region: 1000
+  cross_cloud: 100

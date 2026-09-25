@@ -1,0 +1,429 @@
+[mem] only 1319MB available, waiting 300s...
+[mem] only 1484MB available, waiting 300s...
+[mem] only 1457MB available, waiting 300s...
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme R --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d01-redact-only -> experiments/pii_redact_only/d01_R_q25_100.json
+Terminated
+SKIP (exists): experiments/pii_redact_only/d10_R_q25_100.json
+SKIP (exists): experiments/pii_redact_only/d30_R_q25_100.json
+[mem] only 1474MB available, waiting 300s...
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme R --format chunked_gzip --limit-refs 1 --cpu-quota 0.10 --bandwidth-mbps 100 --label pii-d10-redact-only -> experiments/pii_redact_only/d10_R_q10_100.json
+{
+  "scheme": "R",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.1,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24782984,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 137.45,
+  "compute_wall_s": 221.08,
+  "time_to_ready_s": 360.51,
+  "docs_in": 20000,
+  "docs_out": 19791,
+  "filter_rate": 0.0104,
+  "output_sha256": "60acaae289dd2b5dc79e39bd3cdb60c6f0c4fd78dec9ce0ee536b8771623166e",
+  "cost_usd": 0.005
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme R --format chunked_gzip --limit-refs 1 --cpu-quota 0.50 --bandwidth-mbps 100 --label pii-d10-redact-only -> experiments/pii_redact_only/d10_R_q50_100.json
+{
+  "scheme": "R",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.5,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24782984,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 34.62,
+  "compute_wall_s": 222.38,
+  "time_to_ready_s": 258.98,
+  "docs_in": 20000,
+  "docs_out": 19791,
+  "filter_rate": 0.0104,
+  "output_sha256": "60acaae289dd2b5dc79e39bd3cdb60c6f0c4fd78dec9ce0ee536b8771623166e",
+  "cost_usd": 0.005
+}
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme A --format chunked_gzip --limit-refs 1 --bandwidth-mbps 100 --label pii-d01-r2 -> experiments/pii_matrix_r2/d01_A_100_r2.json
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24771919,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 230.81,
+  "time_to_ready_s": 232.79,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "cost_usd": 0.0049
+}
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d01-r2 -> experiments/pii_matrix_r2/d01_C_q25_100_r2.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24695403,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 817.87,
+  "compute_wall_s": 1.14,
+  "time_to_ready_s": 820.99,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "cost_usd": 0.0051
+}
+[mem] only 1479MB available, waiting 300s...
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme E --format chunked_gzip --limit-refs 1 --bandwidth-mbps 10000 --label pii-d01-r2 -> experiments/pii_matrix_r2/d01_E_10000_r2.json
+{
+  "scheme": "E",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 10000.0,
+  "bytes_storage_to_compute": 24771919,
+  "transfer_time_s": 0.02,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 232.39,
+  "time_to_ready_s": 232.41,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "cost_usd": 0.0027
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme A --format chunked_gzip --limit-refs 1 --bandwidth-mbps 100 --label pii-d10-r2 -> experiments/pii_matrix_r2/d10_A_100_r2.json
+=== driver restart 2026-09-25T07:04:16Z ===
+SKIP (exists): experiments/pii_redact_only/d01_R_q25_100.json
+SKIP (exists): experiments/pii_redact_only/d10_R_q25_100.json
+SKIP (exists): experiments/pii_redact_only/d30_R_q25_100.json
+SKIP (exists): experiments/pii_redact_only/d10_R_q10_100.json
+SKIP (exists): experiments/pii_redact_only/d10_R_q50_100.json
+SKIP (exists): experiments/pii_matrix_r2/d01_A_100_r2.json
+SKIP (exists): experiments/pii_matrix_r2/d01_C_q25_100_r2.json
+SKIP (exists): experiments/pii_matrix_r2/d01_E_10000_r2.json
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme A --format chunked_gzip --limit-refs 1 --bandwidth-mbps 100 --label pii-d10-r2 -> experiments/pii_matrix_r2/d10_A_100_r2.json
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24802894,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 237.97,
+  "time_to_ready_s": 239.95,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0049
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d10-r2 -> experiments/pii_matrix_r2/d10_C_q25_100_r2.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24709249,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 1064.52,
+  "compute_wall_s": 1.24,
+  "time_to_ready_s": 1067.74,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0052
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme E --format chunked_gzip --limit-refs 1 --bandwidth-mbps 10000 --label pii-d10-r2 -> experiments/pii_matrix_r2/d10_E_10000_r2.json
+{
+  "scheme": "E",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 10000.0,
+  "bytes_storage_to_compute": 24802894,
+  "transfer_time_s": 0.02,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 233.22,
+  "time_to_ready_s": 233.24,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0027
+}
+>>> [tier d30] .venv/bin/python scripts/10_run_scheme.py --scheme A --format chunked_gzip --limit-refs 1 --bandwidth-mbps 100 --label pii-d30-r2 -> experiments/pii_matrix_r2/d30_A_100_r2.json
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24888461,
+  "transfer_time_s": 1.99,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 224.23,
+  "time_to_ready_s": 226.22,
+  "docs_in": 20000,
+  "docs_out": 19827,
+  "filter_rate": 0.0087,
+  "output_sha256": "4922a34289a65d731413f91a54932e89732916dee3352b757aff5ce961bb7fc8",
+  "cost_usd": 0.0049
+}
+>>> [tier d30] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d30-r2 -> experiments/pii_matrix_r2/d30_C_q25_100_r2.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24730417,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 814.22,
+  "compute_wall_s": 1.65,
+  "time_to_ready_s": 817.85,
+  "docs_in": 20000,
+  "docs_out": 19827,
+  "filter_rate": 0.0087,
+  "output_sha256": "4922a34289a65d731413f91a54932e89732916dee3352b757aff5ce961bb7fc8",
+  "cost_usd": 0.0051
+}
+>>> [tier d30] .venv/bin/python scripts/10_run_scheme.py --scheme E --format chunked_gzip --limit-refs 1 --bandwidth-mbps 10000 --label pii-d30-r2 -> experiments/pii_matrix_r2/d30_E_10000_r2.json
+{
+  "scheme": "E",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 10000.0,
+  "bytes_storage_to_compute": 24888461,
+  "transfer_time_s": 0.02,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 233.04,
+  "time_to_ready_s": 233.06,
+  "docs_in": 20000,
+  "docs_out": 19827,
+  "filter_rate": 0.0087,
+  "output_sha256": "4922a34289a65d731413f91a54932e89732916dee3352b757aff5ce961bb7fc8",
+  "cost_usd": 0.0027
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.10 --bandwidth-mbps 100 --label pii-d10-r2 -> experiments/pii_matrix_r2/d10_C_q10_100_r2.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.1,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24709249,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 1840.18,
+  "compute_wall_s": 1.09,
+  "time_to_ready_s": 1843.25,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0051
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.50 --bandwidth-mbps 100 --label pii-d10-r2 -> experiments/pii_matrix_r2/d10_C_q50_100_r2.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.5,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24709249,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 459.79,
+  "compute_wall_s": 1.06,
+  "time_to_ready_s": 462.83,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0051
+}
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme A --format chunked_gzip --limit-refs 1 --bandwidth-mbps 100 --label pii-d01-r3 -> experiments/pii_matrix_r2/d01_A_100_r3.json
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24771919,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 225.8,
+  "time_to_ready_s": 227.78,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "cost_usd": 0.0049
+}
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d01-r3 -> experiments/pii_matrix_r2/d01_C_q25_100_r3.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24695403,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 803.6,
+  "compute_wall_s": 1.1,
+  "time_to_ready_s": 806.68,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "cost_usd": 0.0051
+}
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme E --format chunked_gzip --limit-refs 1 --bandwidth-mbps 10000 --label pii-d01-r3 -> experiments/pii_matrix_r2/d01_E_10000_r3.json
+{
+  "scheme": "E",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 10000.0,
+  "bytes_storage_to_compute": 24771919,
+  "transfer_time_s": 0.02,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 228.11,
+  "time_to_ready_s": 228.13,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "cost_usd": 0.0027
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme A --format chunked_gzip --limit-refs 1 --bandwidth-mbps 100 --label pii-d10-r3 -> experiments/pii_matrix_r2/d10_A_100_r3.json
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24802894,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 226.72,
+  "time_to_ready_s": 228.7,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0049
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d10-r3 -> experiments/pii_matrix_r2/d10_C_q25_100_r3.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24709249,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 826.36,
+  "compute_wall_s": 1.13,
+  "time_to_ready_s": 829.47,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0051
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme E --format chunked_gzip --limit-refs 1 --bandwidth-mbps 10000 --label pii-d10-r3 -> experiments/pii_matrix_r2/d10_E_10000_r3.json
+{
+  "scheme": "E",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 10000.0,
+  "bytes_storage_to_compute": 24802894,
+  "transfer_time_s": 0.02,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 230.46,
+  "time_to_ready_s": 230.48,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0027
+}
+>>> [tier d30] .venv/bin/python scripts/10_run_scheme.py --scheme A --format chunked_gzip --limit-refs 1 --bandwidth-mbps 100 --label pii-d30-r3 -> experiments/pii_matrix_r2/d30_A_100_r3.json
+{
+  "scheme": "A",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24888461,
+  "transfer_time_s": 1.99,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 230.55,
+  "time_to_ready_s": 232.54,
+  "docs_in": 20000,
+  "docs_out": 19827,
+  "filter_rate": 0.0087,
+  "output_sha256": "4922a34289a65d731413f91a54932e89732916dee3352b757aff5ce961bb7fc8",
+  "cost_usd": 0.0049
+}
+>>> [tier d30] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d30-r3 -> experiments/pii_matrix_r2/d30_C_q25_100_r3.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24730417,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 791.5,
+  "compute_wall_s": 1.1,
+  "time_to_ready_s": 794.58,
+  "docs_in": 20000,
+  "docs_out": 19827,
+  "filter_rate": 0.0087,
+  "output_sha256": "4922a34289a65d731413f91a54932e89732916dee3352b757aff5ce961bb7fc8",
+  "cost_usd": 0.0051
+}
+>>> [tier d30] .venv/bin/python scripts/10_run_scheme.py --scheme E --format chunked_gzip --limit-refs 1 --bandwidth-mbps 10000 --label pii-d30-r3 -> experiments/pii_matrix_r2/d30_E_10000_r3.json
+{
+  "scheme": "E",
+  "format": "chunked_gzip",
+  "cpu_quota": null,
+  "bandwidth_mbps": 10000.0,
+  "bytes_storage_to_compute": 24888461,
+  "transfer_time_s": 0.02,
+  "storage_wall_s": 0.0,
+  "compute_wall_s": 228.21,
+  "time_to_ready_s": 228.23,
+  "docs_in": 20000,
+  "docs_out": 19827,
+  "filter_rate": 0.0087,
+  "output_sha256": "4922a34289a65d731413f91a54932e89732916dee3352b757aff5ce961bb7fc8",
+  "cost_usd": 0.0027
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.10 --bandwidth-mbps 100 --label pii-d10-r3 -> experiments/pii_matrix_r2/d10_C_q10_100_r3.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.1,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24709249,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 1853.24,
+  "compute_wall_s": 1.1,
+  "time_to_ready_s": 1856.32,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0051
+}
+>>> [tier d10] .venv/bin/python scripts/10_run_scheme.py --scheme C --format chunked_gzip --limit-refs 1 --cpu-quota 0.50 --bandwidth-mbps 100 --label pii-d10-r3 -> experiments/pii_matrix_r2/d10_C_q50_100_r3.json
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.5,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24709249,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 462.26,
+  "compute_wall_s": 1.07,
+  "time_to_ready_s": 465.31,
+  "docs_in": 20000,
+  "docs_out": 19792,
+  "filter_rate": 0.0104,
+  "output_sha256": "a1e15d97900a9f93ddc552f0d7164d405f45973379ca2069f1475c72b69203ef",
+  "cost_usd": 0.0051
+}
+EXTRAS DONE.
+DRIVER_EXIT:0 2026-09-25T10:11:53Z

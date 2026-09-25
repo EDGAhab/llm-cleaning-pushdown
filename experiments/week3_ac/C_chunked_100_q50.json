@@ -1,0 +1,39 @@
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.5,
+  "bandwidth_mbps": 100.0,
+  "label": "",
+  "storage_cpu_s": 0.0,
+  "storage_wall_s": 1485.82,
+  "pushdown_notes": {
+    "parallel_workers": 4,
+    "parallel_wall_s": 1485.82,
+    "throttle": "cpulimit-50%",
+    "pii_redactions": 17169,
+    "sig_bytes": 56122077,
+    "sig_refs": [
+      "experiments/storage_nodes/node0/pushdown_out/sig_0000.jsonl.gz",
+      "experiments/storage_nodes/node0/pushdown_out/sig_0001.jsonl.gz",
+      "experiments/storage_nodes/node1/pushdown_out/sig_0000.jsonl.gz",
+      "experiments/storage_nodes/node2/pushdown_out/sig_0000.jsonl.gz",
+      "experiments/storage_nodes/node3/pushdown_out/sig_0000.jsonl.gz"
+    ],
+    "cpu_quota_requested": 0.5,
+    "cpu_quota_enforced": true
+  },
+  "compute_cpu_s": 6.62,
+  "compute_wall_s": 6.23,
+  "docs_in": 100000,
+  "docs_out": 98896,
+  "pii_redactions": 17169,
+  "sig_bytes_not_transferred": 56122077,
+  "bytes_storage_to_compute": 122873148,
+  "transfer_time_s": 9.83,
+  "time_to_ready_s": 1501.88,
+  "filter_rate": 0.011,
+  "output_sha256": "413a353221efc97a3fec08be520d1e72328ff68201051a8bf2144c19ec7f08df",
+  "total_wall_s": 1500.72,
+  "cost_usd": 0.0111,
+  "cost_usd_ex_egress": 0.0001
+}

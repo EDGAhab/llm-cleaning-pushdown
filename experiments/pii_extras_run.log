@@ -1,0 +1,37 @@
+>>> [tier d01] .venv/bin/python scripts/10_run_scheme.py --scheme R --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d01-redact-only -> experiments/pii_redact_only/d01_R_q25_100.json
+{
+  "scheme": "R",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24770508,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 62.01,
+  "compute_wall_s": 231.0,
+  "time_to_ready_s": 294.99,
+  "docs_in": 20000,
+  "docs_out": 19785,
+  "filter_rate": 0.0108,
+  "output_sha256": "abfa422d7fb9f0ea92443b9e7a6abb30fb64761c1126126f02ac706ca60dba2a",
+  "cost_usd": 0.0051
+}
+SKIP (exists): experiments/pii_redact_only/d10_R_q25_100.json
+>>> [tier d30] .venv/bin/python scripts/10_run_scheme.py --scheme R --format chunked_gzip --limit-refs 1 --cpu-quota 0.25 --bandwidth-mbps 100 --label pii-d30-redact-only -> experiments/pii_redact_only/d30_R_q25_100.json
+{
+  "scheme": "R",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.25,
+  "bandwidth_mbps": 100.0,
+  "bytes_storage_to_compute": 24796678,
+  "transfer_time_s": 1.98,
+  "storage_wall_s": 61.72,
+  "compute_wall_s": 220.21,
+  "time_to_ready_s": 283.91,
+  "docs_in": 20000,
+  "docs_out": 19817,
+  "filter_rate": 0.0091,
+  "output_sha256": "65ea7f0a981f6ae3d7166f4df705767f360966a6c8e5fe05903ce8687a03727a",
+  "cost_usd": 0.005
+}
+[mem] only 1523MB available, waiting 300s...
+[mem] only 1455MB available, waiting 300s...

@@ -1,0 +1,35 @@
+{
+  "scheme": "C",
+  "format": "chunked_gzip",
+  "cpu_quota": 0.5,
+  "bandwidth_mbps": 100.0,
+  "label": "",
+  "storage_cpu_s": 247.28,
+  "storage_wall_s": 474.21,
+  "pushdown_notes": {
+    "parallel_workers": 1,
+    "parallel_wall_s": 474.21,
+    "throttle": "cpulimit-50%",
+    "pii_redactions": 3195,
+    "sig_bytes": 11230577,
+    "sig_refs": [
+      "experiments/storage_nodes/node0/pushdown_out/sig_0000.jsonl.gz"
+    ],
+    "cpu_quota_requested": 0.5,
+    "cpu_quota_enforced": true
+  },
+  "compute_cpu_s": 1.19,
+  "compute_wall_s": 1.07,
+  "docs_in": 20000,
+  "docs_out": 19790,
+  "pii_redactions": 3195,
+  "sig_bytes_not_transferred": 11230577,
+  "bytes_storage_to_compute": 24696249,
+  "transfer_time_s": 1.98,
+  "time_to_ready_s": 477.26,
+  "filter_rate": 0.0105,
+  "output_sha256": "95bf62fed191643de0b49c7dd9a656a08c03e379673baf26c854978485d538c1",
+  "total_wall_s": 476.55,
+  "cost_usd": 0.0052,
+  "cost_usd_ex_egress": 0.0029
+}
