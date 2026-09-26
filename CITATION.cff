@@ -1,0 +1,26 @@
+# This CITATION.cff file makes the repository citable (e.g. GitHub "Cite this repository").
+cff-version: 1.2.0
+title: "Pushdown Is Not Free: A Small-Scale Measurement of Storage-Side PII Redaction in Text-Cleaning Pipelines"
+message: "If you use this software or build on its results, please cite it as below."
+type: software
+authors:
+  - family-names: Huang
+    given-names: Feilian
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0006-2214-0233"
+version: "1.0.0"
+date-released: "2026-09-25"
+repository-code: "https://github.com/EDGAhab/llm-cleaning-pushdown"
+license: Apache-2.0
+doi: 10.5281/zenodo.22964229
+preferred-citation:
+  type: article
+  title: "Pushdown Is Not Free: A Small-Scale Measurement of Storage-Side PII Redaction in Text-Cleaning Pipelines"
+  authors:
+    - family-names: Huang
+      given-names: Feilian
+      affiliation: "Independent Researcher"
+      orcid: "https://orcid.org/0009-0006-2214-0233"
+  doi: 10.5281/zenodo.22964229
+  url: "https://zenodo.org/records/22964229"
+  year: 2026
